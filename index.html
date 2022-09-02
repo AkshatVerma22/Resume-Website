@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <title>Side Navigation Bar</title>
+
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Bebas+Neue&family=Cabin&family=Mochiy+Pop+One&family=Mukta:wght@200&family=Orbitron&family=Poppins:wght@100&family=Rubik+Iso&family=Rubik+Marker+Hatch&family=Rubik+Maze&display=swap');
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      list-style: none;
+      text-decoration: none;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    body {
+      background-color: rgba(10, 8, 8, 0.768);
+    }
+
+    .wrapper {
+      display: flex;
+      position: relative;
+    }
+
+    .wrapper .sidebar {
+      width: 200px;
+      height: 100%;
+      background-color: #282727;
+      padding: 30px 0px;
+      position: fixed;
+    }
+
+    .wrapper .sidebar h2 {
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .wrapper .sidebar ul li {
+      padding: 15px;
+      border-bottom: 1px solid #bdb8d7;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .wrapper .sidebar ul li a {
+      color: #bdb8d7;
+      display: block;
+    }
+
+    .wrapper .sidebar ul li a .fas {
+      width: 25px;
+    }
+
+    .wrapper .sidebar ul li:hover {
+      background-color: #594f8d;
+    }
+
+    .wrapper .sidebar ul li:hover a {
+      color: #fff;
+    }
+
+    .wrapper .sidebar .social_media {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+
+    }
+
+    .wrapper .sidebar .social_media a {
+      display: block;
+      width: 40px;
+      background: #816cea;
+      height: 40px;
+      line-height: 45px;
+      text-align: center;
+      margin: 0 5px;
+      color: #bdb8d7;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      color: white;
+    }
+
+    .wrapper .sidebar .social_media a:hover {
+      color: rgb(0, 0, 0);
+    }
+
+    .wrapper .main_content {
+      width: 100%;
+      margin-left: 200px;
+    }
+
+    .wrapper .main_content .header {
+      padding: 20px;
+      background: #fff;
+      color: #717171;
+      border-bottom: 1px solid #e0e4e8;
+    }
+
+    .wrapper .main_content .info {
+      margin: 20px;
+      color: #717171;
+      line-height: 25px;
+    }
+
+    .wrapper .main_content .info div {
+      margin-bottom: 20px;
+
+
+    }
+
+    header {
+      height: 100px;
+      background: #262626;
+      width: 100%;
+      z-index: 10;
+      position: fixed;
+    }
+
+    .logo {
+      width: 30%;
+      float: left;
+      line-height: 100px;
+    }
+
+    .logo a {
+      text-decoration: none;
+      font-size: 30px;
+      font-family: bignoodletitling;
+      color: #fff;
+      letter-spacing: 5px;
+    }
+
+    nav {
+      float: right;
+      line-height: 100px;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-family: bignoodletitling;
+      letter-spacing: 4px;
+      font-size: 20px;
+      margin: 0 10px;
+      color: #fff;
+    }
+
+  
+
+   
+  </style>
+</head>
+
+<body>
+  
+  <div class="wrapper">
+    <div class="sidebar">
+      <h2>Dr.A.Sheik Abdullah</h2>
+      <ul>
+        <li><a href="#Home"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="#Profile"><i class="fas fa-user"></i>Profile</a></li>
+        <li><a href="#Awards"><i class="fas fa-award"></i>Awards</a></li>
+        <li><a href="#Relations"><i class="fas fa-globe"></i>Relations</a></li>
+        <li><a href="#Projects"><i class="fas fa-project-diagram"></i>Projects</a></li>
+        <li><a href="#Publications"><i class="fas fa-blog"></i>Publications</a></li>
+
+        <li><a href="#Workshops"><i class="fas fa-microphone"></i>Workshops</a></li>
+        <li><a href="#Contact"><i class="fas fa-address-book"></i>Contact</a></li>
+      </ul>
+      <div class="social_media">
+        <a href="#"><i class="fa fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+    <div class="main_content">
+      <div class="header" style="margin: 20px;background-color:#282727;color:white;font-family: 'Poppins', sans-serif;"
+        id="Home">
+
+
+        <h4>Dr.A.Sheik.Abdullah</h4><br>
+
+        Assistant Professor (senior Gr. 2),<br> School of Computer Science and Engineering,<br>
+        Vellore Institute of Technology,<br>
+        Chennai Campus, Tamil Nadu.
+        <div> <br><br>
+
+          <p style="text-align:right;"> Phone: +91 9994216590 <br>
+            Email: aa.sheikabdullah@gmail.com<br>
+            Scopus ID: 57190010410<br>
+            <a href="https://scholar.google.com/citations?user=ZLOm0jEAAAAJ&hl=en"
+              style="color:#9684f0;">https://scholar.google.com/citations?user=ZLOm0jEAAAAJ&hl=en</a>
+          </p>
+        </div>
+
+
+      </div>
+      <div class="info" style="background-color: #282727;padding:10px;margin: 20px;">
+        <div id="Profile">
+
+          <h1 class="line" style="font-family: 'Poppins', sans-serif;color: #9684f0;font-size: 35px;padding-bottom: 15px;
+          border-bottom-style: solid;
+          border-bottom-width: 3.1px;
+          width: 100%;">
+            Education
+            <a href="#"><i class="fas fa-book" style="color: #9684f0;margin-left:10px"></i></a>
+          </h1>
+
+        </div>
+        <div style="color: white;font-size: 15px;font-family: 'Mukta', sans-serif;height: fit-content;">
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">PhD., 2019, Anna University, Chennai, India.</li>
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">M.E., 2012, Anna University, Chennai, India. (Gold
+            Medalist – First class with Distinction – 8.6)</li>
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">B.E., 2010, Anna University, Chennai, India. (First
+            Class with Distinction – 80%)</li>
+
+
+
+        </div>
+        <div>
+
+          <h1 class="line" style="font-family: 'Poppins', sans-serif;color: #9684f0;font-size: 35px;padding-bottom: 15px;
+            border-bottom-style: solid;
+            border-bottom-width: 3.1px;
+            width: 100%;font-weight: bolder;">
+            Work Experience
+            <a href="#"><i class="fas fa-briefcase" style="color: #9684f0;font-weight: bold;margin-left:10px"></i></a>
+          </h1>
+        </div>
+        <div
+          style="background-color: rgba(0, 0, 0, 0.595);backdrop-filter:blur(5px) ;color: white;font-size: 15px;font-family: 'Mukta', sans-serif;height: fit-content;">
+          <h1 style="font-family: 'Alumni Sans Pinstripe', sans-serif;font-size: 30px;margin: 10px;padding: 10px;">
+            20th Jan 2022 to Present :
+          </h1>
+
+
+
+        </div>
+        <div style="color: white;font-size: 20px;font-family: 'Mukta', sans-serif;height: fit-content;padding: 10px;">
+          Assistant Professor (Senior Grade 2), School of Computer Science and Engineering, Vellore Institute of
+          Technology, Chennai Campus – 600127, Tamil Nadu, India. (Ranked within the top 200 in Asia (QS - Asia
+          University Rankings 2022, 9th in NIRF India Rankings)
+
+
+
+        </div>
+        <div
+          style="background-color: rgba(0, 0, 0, 0.595);backdrop-filter:blur(5px) ;color: white;font-size: 15px;font-family: 'Mukta', sans-serif;height: fit-content;">
+          <h1 style="font-family: 'Alumni Sans Pinstripe', sans-serif;font-size: 30px;margin: 10px;padding: 10px;">
+            Dec 2012 to 6th Jan 2022 (9 years) :
+          </h1>
+
+
+
+        </div>
+        <div style="color: white;font-size: 20px;font-family: 'Mukta', sans-serif;height: fit-content;padding: 10px;">
+          Assistant Professor (Senior Grade 2), School of Computer Science and Engineering, Vellore Institute of
+          Technology, Chennai Campus – 600127, Tamil Nadu, India. (Ranked within the top 200 in Asia (QS - Asia
+          University Rankings 2022, 9th in NIRF India Rankings) <br>
+
+          <span style="font-weight: bold;">Teaching: </span>Data Analytics, Data Science, Information Retrieval, Machine
+          Learning, Programming Essentials. <br>
+          <span style="font-weight: bold;">Research: </span> Data Analytics, Soft Computing (Swarm Intelligence),
+          Machine learning.
+
+
+        </div>
+
+
+        <div>
+
+          <h1 class="line" style="font-family: 'Poppins', sans-serif;color: #baf4f7;font-size: 30px;padding-bottom: 15px;
+            border-bottom-style: solid;
+            border-bottom-width: 3.1px;
+            width: fit-content;">
+            Academic Responsibilities held :
+
+          </h1>
+        </div>
+        <div style="color: white;font-size: 15px;font-family: 'Mukta', sans-serif;height: fit-content;">
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">Yi YUVA Student Chapter Coordinator (Chennai Forum)
+          </li>
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">ACM Student Chapter Faculty Sponsor (2015 –
+            Present) </li>
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">Department Administration DLC</li>
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">Placement coordinator DLC</li>
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">Faculty Appraisal DLC</li>
+
+
+
+        </div>
+        <div>
+
+          <h1 class="line" style="font-family: 'Poppins', sans-serif;color: #baf4f7;font-size: 30px;padding-bottom: 15px;
+            border-bottom-style: solid;
+            border-bottom-width: 3.1px;
+            width: fit-content;">
+            Domain of interests :
+
+          </h1>
+        </div>
+        <div style="color: white;font-size: 15px;font-family: 'Mukta', sans-serif;height: fit-content;">
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">
+            Data Analytics
+
+          </li>
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">Soft Computing </li>
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">Department Administration DLC</li>
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">Machine Learning</li>
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">Swarm Intelligence</li>
+
+
+
+        </div>
+        <div id="Awards">
+
+          <h1 class="line" style="font-family: 'Poppins', sans-serif;color: #9684f0;font-size: 35px;padding-bottom: 15px;
+          border-bottom-style: solid;
+          border-bottom-width: 3.1px;
+          width: 100%;font-weight: bold;">
+            Awards & Honors
+            <a href="#"><i class="fas fa-award" style="color: #9684f0;margin-left:10px"></i></a>
+          </h1>
+
+        </div>
+        <div
+          style="color: white;font-size: 20px;font-family: 'Mukta', sans-serif;height: fit-content;padding: 10px;font-weight: bold;">
+          Association for Computing Machinery (ACM) Student Chapter Faculty Sponsor for Leadership & Commitment
+          (2016-2020). <br> <br>
+
+          Expertise in Soft Computing, Springer – Reviewer Recognition (2019). <br> <br>
+
+          Mentor Recognition in DST & Texas Instruments India Innovation Challenge Innovation contest (2019). <br> <br>
+
+          Recognized for Exceptional Contribution as Primary Evaluator in Toycathon 2021, Organized by the Ministry of
+          Education, Ministry of MSME and Ministry of Education’s Innovation cell, Government of India. <br> <br>
+
+          Honorable Chief Minister Award for Excellence in E-Governance (Bronze Medal) (2015).<br> <br>
+
+          Gold Medalist ME (CSE) Anna University, Chennai. (2013) <br> <br>
+
+          ACM Coach Award for mentoring student’s team in ACM International Collegiate Programming Contest (2014). <br>
+          <br>
+
+
+
+        </div>
+        <h1 class="line" style="font-family: 'Poppins', sans-serif;color: #baf4f7;font-size: 30px;padding-bottom: 15px;
+        border-bottom-style: solid;
+        border-bottom-width: 3.1px;
+        width: fit-content;">
+          PhD Supervisorship
+
+        </h1>
+        <div style="color: white;font-size: 20px;font-family: 'Mukta', sans-serif;height: fit-content;padding: 10px;">
+          Recognized as a PhD Supervisor (Ref.No.: VITCC/Dean(AR)/SCOPE/20221839) for guiding PhD scholars of VIT
+          University Chennai under the School of Computer Science and Engineering. <br><br>
+          Recognized as a PhD Supervisor (Ref.No.: 3840010) for guiding PhD scholars of Anna University Chennai under
+          the faculty of Information and Communication Engineering.
+
+
+
+
+        </div>
+        <h1 class="line" style="font-family: 'Poppins', sans-serif;color: #baf4f7;font-size: 30px;padding-bottom: 15px;
+      border-bottom-style: solid;
+      border-bottom-width: 3.1px;
+      width: fit-content;">
+          Other Recognitions :
+
+        </h1>
+        <div style="color: white;font-size: 20px;font-family: 'Mukta', sans-serif;height: fit-content;padding: 10px;">
+          As a Program committee member and reviewer in 2022 IEEE World conference on Applied Intelligence and
+          Computing, held during 17-19 June 2022, in collaboration with soft computing research society. <br> <br>
+          Reviewer in IEEE Transactions, IEEE Access, Elsevier, Wiley, and Springer Journals. <br><br>
+          As an expert reviewer in International Conference on Artificial Intelligence and Sustainable Computing for
+          Smart Cities, March 22nd – 23rd, AIS2C2 is a coalition of six Universities from India and Europe, Greater
+          Noida, India, 2021. <br><br>
+          Shortlisted for for "Prof Ravi Ravindran and ORSI-BC Internship 2020” for about two months at Indian Institute
+          of Science (IISC), Bangalore with a stipend of Rs. 25, 000/. Per Month, 2020. <br><br>
+          As an expert reviewer in International Conference on Innovation and Intelligence for Informatics Computing and
+          Technologies (3ICT 2020), IEEE Bahrain Section and IET UK, 20-21 December, University of Bahrain, Bahrain,
+          2020. <br><br>
+          Two days Visiting Faculty at The Institute of Mathematical Sciences (IMSc), Chennai (Supported by Department
+          of Atomic Energy of the Government of India) for interacting with the professors at IMSc in the domain of
+          Machine Learning and Computational Biology, 2019. <br><br>
+          Shortlisted for Research work Presentation in the "ACM IRISS 2019: 13th Inter-Research-Institute Student
+          Seminar in Computer Science", Association for Computing and Machinery (ACM) February 06th-07th, 2019. <br><br>
+          As a visiting Researcher for Training Programme on "Timed Automata and the UPPAAL Tool", at Chennai
+          Mathematical Institute (CMI), Chennai. 19-02-2018 to 21-03-2018. <br><br>
+          As a Visiting researcher for Training Programme on “Timed Automata and its Applications”, at Chennai
+          Mathematical Institute (CMI), Chennai 29-05-2017 to 02-06-2017. <br><br>
+          As an expert reviewer in 13th World Conference on Applied Data Science, (WCASET – 18) October 19th – 20th
+          2018, Bangkok. <br><br>
+          As an expert reviewer in World Conference on Applied Science Engineering and Technology, (WCASET – 2018), 29th
+          – 30th December 2018, Goa. <br><br>
+
+
+
+
+
+        </div>
+        <h1 class="line" style="font-family: 'Poppins', sans-serif;color: #baf4f7;font-size: 30px;padding-bottom: 15px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;">
+          Certifications
+          <a href="#"><i class="fas fa-certificate" style="color: #baf4f7;margin-left:10px"></i></a>
+        </h1>
+        <div style="color: white;font-size: 20px;font-family: 'Mukta', sans-serif;height: fit-content;padding: 10px;">
+          <li style="list-style: circle;padding:10px;margin:10px">Certified by Coursera for 6 different courses from the
+            University of Illinois, University of California (Irvine/San Diego), Johns Hopkins University, University of
+            Colorado Boulder. </li>
+          <li style="list-style: circle;padding:10px;margin:10px">Certified by IIT Bombay & NPIU Government of India for
+            the two week course on Digital Transformations in Teaching. </li>
+          <li style="list-style: circle;padding:10px;margin:10px">Certified by Indo Universal Collaboration for
+            Engineering Education (IUCEE) for the course on EPICS Design Thinking (12 Weeks)</li>
+
+
+
+
+
+        </div>
+        <div style="margin-bottom: 30px;" id="Relations">
+
+          <h1 class="line" style="font-family: 'Poppins', sans-serif;color: #9684f0;font-size: 35px;padding-bottom: 15px;
+            border-bottom-style: solid;
+            border-bottom-width: 3.1px;
+            width: 100%;font-weight: bold;">
+            Relations
+            <a href="#"><i class="fas fa-globe" style="color: #9684f0;margin-left:10px"></i></a>
+          </h1>
+        </div>
+        <h1 class="line" style="font-family: 'Poppins', sans-serif;color: #baf4f7;font-size: 30px;padding-bottom: 15px;
+          border-bottom-style: solid;
+          border-bottom-width: 3.1px;
+          width: fit-content;">
+          Professional Memberships :
+
+        </h1>
+        <div style="color: white;font-size: 20px;font-family: 'Mukta', sans-serif;height: fit-content;padding: 10px;">
+          <li style="list-style: circle;padding:10px;margin:10px"> ACM Association for Computing Machinery 1184581
+
+
+          </li>
+          <li style="list-style: circle;padding:10px;margin:10px">Internet Society 2186256 </li>
+          <li style="list-style: circle;padding:10px;margin:10px"> ISTE Indian Society for Technical Education 93042
+          </li>
+
+
+
+
+
+        </div>
+        <h1 class="line" style="font-family: 'Poppins', sans-serif;color: #baf4f7;font-size: 30px;padding-bottom: 15px;
+          border-bottom-style: solid;
+          border-bottom-width: 3.1px;
+          width: fit-content;">
+          Liaison with Industry :
+
+        </h1>
+        <div style="color: white;font-size: 20px;font-family: 'Mukta', sans-serif;height: fit-content;padding: 10px;">
+          Signed MOU between CDAC Chennai and Data Analytics Lab, TCE for promoting industrial collaborations such as
+          Training, Research, and conducting Industry supported courses. <br><br>
+          Organized Industry supported courses with Cognizant Chennai for the course on Data Warehousing and Business
+          Intelligence. (2014 – 2017) Expert: Mr.SriramVeembu <br><br>
+          Organized FDP in Machine learning and IOT by interacting experts from Xerox Research labs, Bangalore. (2015)
+          Expert: Dr.GeethaManjunath <br><br>
+          Conducted First Annual event meet for the ACM student chapter by inviting Mr.SrinivasPadmanabhuni (ACM
+          President). (2015) <br><br>
+          Initiated and organized credit course on IBM Watson Analytics and IBM Big data Technologies. (2015 – 2021)
+          Expert: Mr.Lawrence Mohanraj <br><br>
+          Conducted Research training program in Advanced Java Technologies from Inautix Chennai (2016) Expert:
+          Mr.S.Thamaraiselvam <br><br>
+          Organized credit course on Hadoop Ecosystem Tools by Dr.K.Vijay Kumar, Principal Director, CDAC, Chennai.
+          <br><br>
+          Organized credit courses on Regression Techniques for Engineering Applications by Mr.GV.Naveen, Datalore labs,
+          Chennai. <br><br>
+          Organized credit course on Data science and AI applications by Mr.Sudharsan Santhiappan, Buddihealth, BuddiAI,
+          Chennai. <br><br>
+
+        </div>
+
+        <h1 class="line" style="font-family: 'Poppins', sans-serif;color: #baf4f7;font-size: 30px;padding-bottom: 15px;
+          border-bottom-style: solid;
+          border-bottom-width: 3.1px;
+          width: fit-content;">
+          Liaison with Higher Learning Institutes :
+
+        </h1>
+
+        <div style="color: white;font-size: 20px;font-family: 'Mukta', sans-serif;height: fit-content;padding: 10px;">
+          Published MOOC course entitled Data Visualization for UG students at Thiagarajar College of Engineering.
+          <br><br>
+          Published MOOC course entitled Statistical Modeling and Analysis for UG students at Thiagarajar College of
+          Engineering.
+
+
+
+        </div>
+        <h1 class="line" style="font-family: 'Poppins', sans-serif;color: #baf4f7;font-size: 30px;padding-bottom: 15px;
+        border-bottom-style: solid;
+        border-bottom-width: 3.1px;
+        width: fit-content;">
+          Patents Filed :
+
+        </h1>
+        <div style="color: white;font-size: 20px;font-family: 'Mukta', sans-serif;height: fit-content;padding: 10px;">
+          App. No: 2021141000190: Novel Clinical Decision support system for Risk factor Prediction and Estimation in
+          Patients with Disease specific Syndromes. <br><br>
+          App. No: 202141017959: Cognitive Mind Based Mobile App and Kiosk Support for Women Mental Health Issues.
+
+
+
+
+        </div>
+        <h1 class="line" style="font-family: 'Poppins', sans-serif;color: #9684f0;font-size: 40px;padding-bottom: 15px;
+        border-bottom-style: solid;
+        border-bottom-width: 3.1px;
+        width: 100%;">
+          Consultancy
+          <a href="#"><i class="fas fa-building" style="color: #9684f0;margin-left:10px"></i></a>
+        </h1>
+
+
+        <div style="color: white;font-size: 15px;font-family: 'Mukta', sans-serif;height: fit-content;">
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">
+            Automation of School Management software from Gain Valuable Solutions, Chennai for an amount of Rs. 24,
+            780/. (July – December 2022)
+          </li>
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">E-Governance - Advanced Income Tax Assessment
+            System, NIC Madurai 2018.</li>
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">E-Governance - Web based Solution for Madurai
+            District Rural Development Agency (DRDA), NIC Madurai 2017.</li>
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">E-Governance - An Automated system for Birth and
+            Death Certificate Issual, NIC Madurai 2015.</li>
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">E-Governance - An Automation System for tracking
+            Community Certificate, NIC Madurai 2013-2014.</li>
+
+
+
+        </div>
+        <div id="Projects">
+
+          <h1 class="line" style="font-family: 'Poppins', sans-serif;color: #9684f0;font-size: 35px;padding-bottom: 15px;
+          border-bottom-style: solid;
+          border-bottom-width: 3.1px;
+          width: 100%;">
+
+            Projects Applied & Funding
+
+            <a href="#"><i class="fas fa-project-diagram" style="color: #9684f0;margin-left:10px"></i></a>
+          </h1>
+        </div>
+
+        <div style="color: white;font-size: 20px;font-family: 'Mukta', sans-serif;height: fit-content;">
+          Received Rs. 4, 50,000.00 funding for AICTE QIP STC on Research Issues and Challenges in Data Science and Big
+          Data Analytics. <br><br>
+          Submitted Project Proposal entitled “Spatial Imagery Analysis of crop Area coverage Using Data Analytics
+          Approaches”, to Ministry of Earth Sciences (MoES), DST, India. <br><br>
+          Submitted Project Proposal entitled “Design of an Intelligent Healthcare System for identifying the
+          Probability of Coronary Heart Disease (CHD) Risk Factors of People based on their habitual and hereditary
+          values”, to Tamil Nadu Innovation Initiatives Scheme (TANII) Government of Tamil Nadu. <br><br>
+          Submitted Project Proposal entitled “An Integrated Approach in Digital Data warehouse for Tamil Nadu
+          Agricultural Management Systems (TAMS)to identify and control Pest and Diseases and to improve Crop
+          Production”, to Tamil Nadu Innovation Initiatives Scheme (TANII) Government of Tamil Nadu. <br><br>
+
+
+
+
+        </div>
+        <div id="Publications">
+
+          <h1 class="line" style="font-family: 'Poppins', sans-serif;color: #9684f0;font-size: 40px;padding-bottom: 15px;
+          border-bottom-style: solid;
+          border-bottom-width: 3.1px;
+          width: 100%;">
+
+            Publications
+
+            <a href="#"><i class="fas fa-book" style="color: #9684f0;margin-left:10px"></i></a>
+          </h1>
+        </div>
+
+        <div
+          style="color: white;font-size: 25px;font-family: 'Mukta', sans-serif;height: fit-content;background-color:rgba(0, 0, 0, 0.595);backdrop-filter:blur(5px) ;margin-top: 10px;margin-bottom: 10px;text-align: center;">
+          1 Book / 16+ Book Chapters 20+ / Scopus/WoS/SCI articles / 45+ International conferences <br> <br>
+          Citations - 271 / H Index - 8 / i10 -Index 8
+        </div>
+
+        <div style="color: white;font-size: 20px;font-family: 'Mukta', sans-serif;height: fit-content;">
+
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">R. Suganya, S. Rajaram, and A. Sheik Abdullah,
+            “Big Data in Medical Image Processing,” CRC Press, pp. 1–45, Jan. 2018. </li> <br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">R.Muruganandham, A.Sheik Abdullah, S.Selvakumar,
+            “A Hybrid Web Analytic Approach through Click Enabled Vision Based Page Segmentation in Quest Software for
+            School Students”, Journal of Intelligent and Fuzzy Systems, IOS Press, 2022.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">A.Sheik Abdullah, “Assessment of the risk
+            factors of type II diabetes using ACO with self‑regulative update function and decision trees by evaluation
+            from Fisher’s Z‑transformation”, Journal of Medical, Biological Engineering and Computing, Springer, Vol.60,
+            No. 1, pp. 1391–1415, 2022. https://doi.org/10.1007/s11517-022-02530-2</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">A. Sheik Abdullah, S. Selvakumar, and M.
+            Venkatesh, “Assessment and evaluation of CHD risk factors using weighted ranked correlation and regression
+            with data classification,” Soft Computing, vol. 25, no. 6, pp. 4979–5001, Feb. 2021. Springer.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">A.Sheik Abdullah, “Assessment of risk factors in
+            medical data using improved Binary Artificial Fish Swarm Algorithm with Classification upon Evaluation from
+            F-Test," International Journal of Swarm Intelligence Research (IJSIR), IGI Global.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">S. Selvakumar, A. Sheik Abdullah, and R.
+            Suganya, “Decision support system for type II diabetes and its risk factor prediction using bee-based
+            harmony search and decision tree algorithm,” International Journal of Biomedical Engineering and Technology,
+            vol. 29, no. 1, p. 46, 2019. Inderscience.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">A. Sheik Abdullah and S. Selvakumar, “Assessment
+            of the risk factors for type II diabetes using an improved combination of particle swarm optimization and
+            decision trees by evaluation with Fisher’s linear discriminant analysis,” Soft Computing, vol. 23, no. 20,
+            pp. 9995–10017, Oct. 2018. Springer.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">S. Rajaram, V. Rajendran, A. Sheik Abdullah, and
+            R. Suganya, “Prediction of heart diseases using hybrid feature selection and modified Laplacian pyramid
+            non-linear diffusion with soft computing methods,” International Journal of Biomedical Engineering and
+            Technology, vol. 25, no. 1, p. 30, 2017. Inderscience.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">Sheik Abdullah A., Akash K., Bhubesh K. R. A.,
+            and Selvakumar S., “Development of a Predictive Model for Textual Data Using Support Vector Machine Based on
+            Diverse Kernel Functions Upon Sentiment Score Analysis,” International Journal of Natural Computing
+            Research, vol. 10, no. 2, pp. 1–20, Apr. 2021. IGI Global</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">R. Suganya, S. Rajaram, A. Sheik Abdullah and V.
+            Rajendran, 2016. A Novel Feature Selection Method for Predicting Heart Diseases with Data Mining Techniques.
+            Asian Journal of Information Technology, 15: 1314-1321. Medwell Journals.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">A. Sheik Abdullah, R. M. Abirami, A. Gitwina,
+            and C. Varthana, “Assessment of Academic Performance with The E-mental Health Interventions in Virtual
+            Learning Environment Using Machine Learning Techniques: A Hybrid Approach,” Journal of Engineering Education
+            Transformations, vol. 34, no. 0, p. 79, Jan. 2021.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">A. Sheik Abdullah, P. Karthikeyan, S.
+            Selvakumar, and R. Parkavi, “A Strategic Approach in Handling Information Retrieval Course for Attaining
+            Course Outcomes – A Case Study,” Journal of Engineering Education Transformations, vol. 34, no. 0, p. 148,
+            Jan. 2021.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">R. Parkavi, P. Karthikeyan, A. Sheik Abdullah,
+            “Impact of Massive Open Online Courses and Best Practices: A Case Study on Social Network Analysis Course”,
+            Journal of Engineering Education Transformations, vol. 31, no. 3, Jan. 2018.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">A. Sheik Abdullah, N. Gayathri, A. M. Abirami,
+            R. Parkavi, “A Statistical Approach for setting SLO Targets over Outcome Based Education-A Case Study”,
+            Journal of Engineering Education Transformations, vol. 31, no. 3, Jan. 2018.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">A. Sheik Abdullah, R. Parkavi, P. Karthikeyan,
+            and S. Selvakumar, “A Text Analytics-based E-Healthcare Decision Support Model Using Machine Learning
+            Techniques,” Smart Computational Intelligence in Biomedical and Health Informatics, pp. 169–182, Jul. 2021.
+            CRC Press.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">A. Sheik Abdullah, R. Parkavi, T. Saranya, P.
+            Priyadharshini, and Arif Ansari, “Data Analytics and Applications to Cyber-Physical Systems,” Cyber-Physical
+            Systems and Industry 4.0, March. 2022. CRC Press.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">K. Keerthy, A. Sheik Abdullah, and S. Chandran,
+            “Analysis of Ground Water Quality Using Statistical Techniques,” Advances in Computational Intelligence and
+            Robotics, pp. 152–161, 2020. IGI Global.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">Sheik Abdullah A. and Abiramie Shree T. G. R.,
+            “Social Network Analysis,” Advances in Data Mining and Database Management, pp. 107–117, 2020. IGI Global.
+          </li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">Sheik Abdullah A. and Priyadharshini P., “Big
+            Data and Analytics,” Advances in Data Mining and Database Management, pp. 47–65, 2020. IGI Global.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">Sheik Abdullah Abbas, S. Subramanian, P. Ravi,
+            S. Ramamoorthy, and V. Munikrishnan, “An Introduction to Survival Analytics, Types, and Its Applications,”
+            Biomechanics, Jan. 2019. Intech Open.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">S. K. Harsheni, S. Souganthika, K. Gokul
+            Karthik, A. Sheik Abdullah, and S. Selvakumar, “Analysis of the Risk Factors of Heart Disease Using
+            Step-Wise Regression with Statistical Evaluation,” Lecture Notes on Data Engineering and Communications
+            Technologies, pp. 712–718, Nov. 2019. Springer.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">Sheik Abdullah A., Selvakumar S., Parkavi R.,
+            Suganya R., and Abirami A. M., “Big Data Analytics in Healthcare Sector,” Research Anthology on Big Data
+            Analytics, Architectures, and Applications, pp. 993–1002, 2022. IGI Global.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">Parkavi R, Priyanka C, Sujitha S., and Sheik
+            Abdullah A, “Mobile Cloud Computing,” Advances in Computer and Electrical Engineering, pp. 105–123, 2018.
+            IGI Global.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">A. Sheik Abdullah, N. Gayathri, S. Selvakumar,
+            and S. Rakesh Kumar, “Identification of the Risk Factors of Type II Diabetic Data Based Support Vector
+            Machine Classifiers upon Varied Kernel Functions,” Lecture Notes in Computational Vision and Biomechanics,
+            pp. 496–505, 2018. Springer.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">R. Parkavi, A. Sheik Abdullah, S. Sujitha, and
+            P. Karthikeyan, “Mobile Devices in the Classroom,” Advances in Educational Technologies and Instructional
+            Design, pp. 177–193, 2018. IGI Global.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">Parkavi. Ravi, P. Chinnaiah, and Sheik Abdullah
+            Abbas, “Cloud Computing Technologies for Green Enterprises,” Green Business, pp. 395–414, 2019. IGI Global.
+          </li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">A. Sheik Abdullah, R. Suganya, S. Selvakumar,
+            and S. Rajaram, “Data Classification,” Handbook of Research on Advanced Data Mining Techniques and
+            Applications for Business Intelligence, pp. 34–51, 2017. IGI Global.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">A. Sheik Abdullah, S. Selvakumar, and A. M.
+            Abirami, “An Introduction to Data Analytics,” Handbook of Research on Advanced Data Mining Techniques and
+            Applications for Business Intelligence, pp. 1–14, 2017. IGI Global.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">Sheik Abdullah A, Selvakumar S, and Ramya C,
+            “Descriptive Analytics,” Applying Predictive Analytics Within the Service Sector, pp. 88–112, 2017. IGI
+            Global.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">Abirami AM, Abdullah AS, Askarunisa A,
+            Selvakumar S, Mahalakshmi C. Sentiment Analysis. Handbook of Research on Advanced Data Mining Techniques and
+            Applications for Business Intelligence, IGI Global; 2017;162–74.</li> <br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">A.Sheik Abdullah et al., “Predicting student’s
+            placement prospects using Machine learning Techniques”, International Conference on Innovative Computing &
+            Communication (ICICC), 22-23 April, 2022, SSRN Elsevier.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">Manoj A, Tarun Kishore Gt, Sheik Abdullah A and
+            Selvakumar S, “Sentiment Analysis of user groups in an working Environment using CNN for Streaming Data
+            Analysis”, International Conference on Emerging Technologies in Data mining and Information Security (IEMIS
+            2022), 23rd to 25th February 2022, Institute of Engineering and Management, Kolkata, India, Springer.</li>
+          <br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">R.Parkavi, P.Karthikeyan, A.Sheik Abdullah,
+            “Collaborative Learning: A Case Study on Information Security and Auditing Management Course”, International
+            Conference for Advancement in Technology (ICONAT), RIT Maharashtra, India. IEEE Xplore.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">Sheik Abdullah A, Manoj A, Tarun Kishore GT,
+            Selvakumar S, “A New Approach to Remote Health Monitoring using Augmented Reality with WebRTC and WebXR”,
+            The International Arab Conference on Information Technology (ACIT 21), Department of Information Studies,
+            Sulthan Qaboos University, Oman, 2021, IEEE Xplore.</li> <br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">Sajeev Krishna R, Shyam K, Sheik Abdullah A,
+            Sherry Ruth V, “Team Mood Detection Using Deep Learning”, 8th International Conference (Online) on Business
+            Analytics and Intelligence, [ICBAI-2021], Indian Institute of Science, Bangalore.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">A.Sheik Abdullah, A.Manoj, S.Selvakumar, “A
+            Hybrid Data Analytic Approach to Evaluate the Performance of Stirling Engine using Machine Learning
+            Techniques”, 3rd IEEE Bombay Section Signature Conference (IBSSC-2021), IIITM Gwalior, IEEE Xplore.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">A.Sheik Abdullah, J.Karthikeyan, KRA Bhubesh,
+            “Medical Steel Fault Prediction Using Deep Learning Techniques”, 16th Conference on Computer Science and
+            Intelligence Systems FEDCSIS 2021, 2-5 September, Position and Communication Papers of the 16th Conference
+            on Computer Science and Intelligence Systems. </li><br>
+
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">A. Sheik Abdullah, A. Manoj, and S. Selvakumar,
+            “Assessment and Evaluation of cancer CT images using deep learning Techniques,” 2021 2nd International
+            Conference on Secure Cyber Computing and Communications (ICSCCC), May 2021. IEEE Xplore.</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">A. Sheik Abdullah, R. Suganya, A. M. Abirami,
+            and K. R. A. Bhubesh, “Detecting Subacute Thyroiditis after COVID-19 infection using Deep Learning
+            Techniques – A Case Study,” Journal of Physics: Conference Series, vol. 1917, no. 1, p. 012023, Jun. 2021.
+          </li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">K. Akash and A. Sheik Abdullah, “A New Model of
+            Zero Energy Air Cooler: An Cost and Energy Efficient Device in Exploit,” Lecture Notes in Electrical
+            Engineering, pp. 141–150, Dec. 2020. Springer</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">A. Sheik Abdullah, K. Akash, J. ShaminThres, and
+            S. Selvakumar, “Sentiment Analysis of Movie Reviews Using Support Vector Machine Classifier with Linear
+            Kernel Function,” Advances in Intelligent Systems and Computing, pp. 345–354, Sep. 2020. Springer</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">A. Sheik Abdullah, V. Rishi Kumar, S.
+            Selvakumar, M. Venkatesh, and P. Ravi, “A Hybrid Decision Support Model for Type II Diabetes,” 2018
+            International Conference on Advances in Computing, Communications and Informatics (ICACCI), Sep. 2018. IEEE
+            Xplore</li><br>
+          <li style="list-style:disc;font-family: 'Mukta', sans-serif;">A. Sheik Abdullah, C. Ramya, V. Priyadharsini,
+            C. Reshma, and S. Selvakumar, “A survey on evolutionary techniques for feature selection,” 2017 Conference
+            on Emerging Devices and Smart Systems (ICEDSS), Mar. 2017. IEEE Xplore</li>
+
+
+
+
+        </div>
+
+        <h1 class="line" style="font-family: 'Poppins', sans-serif;color: #baf4f7;font-size: 30px;padding-bottom: 15px;
+        border-bottom-style: solid;
+        border-bottom-width: 3.1px;
+        width: fit-content;">
+          Projects Guided :
+
+        </h1>
+
+
+        <div style="background-color:rgba(0, 0, 0, 0.595);backdrop-filter:blur(5px) ;color: white;">
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">
+            Feature Based Predictive Modeling and Analytics for Medical Data
+          </li>
+
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">A Hybrid Predictive Model for the Determination of
+            Cancer Recurrence</li>
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">Big Data Processing Using HBASE for Clinical
+            Datasets</li>
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">Predictive Analysis in Medical Data Using Weight
+            Based Decision Trees</li>
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">A Hybrid Web Analytic Approach through Page
+            Segmentation for Quest Software</li>
+          <li style="list-style:circle ;margin: 10px;padding: 10px;">Proctor Management System-In-House Project</li>
+        </div>
+
+        <div id="Workshops">
+
+          <h1 class="line" style="font-family: 'Poppins', sans-serif;color: #9684f0;font-size: 35px;padding-bottom: 15px;
+          border-bottom-style: solid;
+          border-bottom-width: 3.1px;
+          width: 100%;">
+
+            Tutorials and Workshops
+            <a href="#"><i class="fas fa-desktop" style="color: #9684f0;margin-left:10px"></i></a>
+          </h1>
+        </div>
+
+        <div style="color: white;font-size: 20px;font-family: 'Mukta', sans-serif;height: fit-content;">
+          One - day workshop on Text Analysis and Information Extraction & Retrieval (TIER 2022), held as part of IFIP
+          6th Virtual International Conference on Computer, Communication, and Signal Processing (ICCCSP-2022) during
+          February 23 – 25, 2022, SSN College of Engineering, Chennai, Tamil Nadu. <br><br><br>
+          AICTE Training and Learning (ATAL) Academy online FDP on Computer Genomics Tools for Next Generation
+          Sequencing and Biomedical Data Analysis from 07-03-2022 to 11-03-2022 at Bharathiar University 2022.
+          <br><br><br>
+          AICTE Training and Learning (ATAL) Academy online FDP on Computational Synthetic and Systems Biology at Indian
+          Institute of Technology Guwahati during 26-07-2021 to 30-07-2021. <br><br><br>
+          AICTE Training and Learning (ATAL) Academy online FDP on Systems Engineering at National Institute of
+          Technology, Jamshedpur during 18-01-2021 to 22-01-2021. <br><br><br>
+          ACM Compute Conference “Pedagogical tools or methodologies to improve teaching-learning&Assessment tools or
+          methodologies that are aligned to learning outcomes”, conducted during 9th – 12th December 2020, organized by
+          ACM India Section, IIT Bombay, CMI, TCS and Nagpur ACM Chapter. <br><br><br>
+          AICTE Training and Learning (ATAL) Academy online FDP on Technology Management at MNIT Malaviya National
+          Institute of Technology, Jaipur during 14-12-2020 to 18-12-2020. <br><br><br>
+          AICTE Training and Learning (ATAL) Academy online FDP on Artificial Intelligence at IIIT Naya Raipur, during
+          21-11-2020 to 25-11-2020. <br><br><br>
+          AICTE Training and Learning (ATAL) Academy online FDP on Data Analysis using SPSS at Mahatma Gandhi
+          University, during 05-10-2020 to 09-10-2020. <br><br><br>
+          AICTE Training and Learning (ATAL) Academy online FDP on Data Sciences at Indian Institute of Information
+          Technology, Vadodara, during 25-05-2020 to 29-05-2020. <br><br><br>
+          Three Days online workshop on “Evidence based Teaching and Learning strategies in Higher Education”, organized
+          by CREATES IISER Bhopal under PMMMNMTT scheme of MHRD, during 13-05-2020 to 15-05- 2020. <br><br><br>
+          Two Day IUCEE-EPICS Workshop by Prof. William Oakes organized by Centre for Engineering Education Research at
+          CMR College of Engineering and Technology, Hyderabad., 30-10-2019 to 31-10-2019. <br><br><br>
+          ACM Compute Conference, The International Centre, Dona Paula, Goa in collaboration with Goa University, Goa.,
+          10-10-2019 to 12-10-2019 <br><br><br>
+          One Week FDP on "Free/Open Source Software for AI and Cyber Security", Organized by Department of Computer
+          Science and Engineering, Thiagarajar College of Engineering, Madurai., 26-08-2019 to 31-08- 2019 <br><br><br>
+          TEQIP III Sponsored One Day Workshop on "CDIO Based Curriculum Design", held at Thiagarajar College of
+          Engineering, Madurai.,27-08-2019 to 27-08-2019. <br><br><br>
+          One Week AICTE QIP Sponsored Short term course on "Pedagogical Innovations and Research Directions in STEM
+          Education", During 25th February to 02nd March 2019., 25-02-2019 to 02-03-2019 <br><br><br>
+          One Week AICTE QIP Sponsored One week short term course on "Content Delivery and Assessment Methods for CS/IT
+          Curriculum" during 11th February to 17th February 2019, Thiagarajar College of Engineering, Madurai.,
+          11-02-2019 to 17-02-2019 <br><br><br>
+          A Two Day Symposium on "Business Analytics and Intelligence", at Indian Institute of Management, Bangalore.,
+          23-06-2018 to 24-06-2018 <br><br><br>
+          Two Days Workshop on "Deep Learning" at Indian Institute of Management (IIM), Bangalore., 21-06-2018 to
+          22-06-2018 <br><br><br>
+          A three day Faculty Development Program on "Outcome Based Education", organized by the Centre for Engineering
+          Education, Thiagarajar College of Engineering, Madurai., 16-03-2017 to 18-03-2017 <br><br><br>
+          DST & SERB TEQIP II Sponsored Short Term Training Programme on "Big data and IoT- The Strategies for Smart
+          Environments", at Department of Information technology, Thiagarajar College of Engineering, Madurai.,
+          17-02-2017 to 21-02-2017 <br><br><br>
+          Faculty Development Program on "Statistics with R", organized by the Department of Computer Science and
+          Engineering in association with Electronics and ICT Academy, National Institute of Technology, Warangal,
+          Telangana State., 26-11-2016 to 01-12-2016 <br><br><br>
+          TEQIP Sponsored workshop on "Evolutionary Optimization Algorithms and Applications", Department of EEE,
+          Thiagarajar College of Engineering, Madurai., 04-03-2016 to 05-03-2016 <br><br><br>
+          TEQIP Sponsored – Two days Hands-on Workshop on “Exploratory and Statistical Analysis using R", 06- 11-2015 to
+          07-11-2015 <br><br><br>
+          TEQIP Sponsored Faculty Development Program on "Assessment and Evaluation: Principles and Practices",
+          02-11-2015 to 04-11-2015 <br><br><br>
+          TWO - WEEK ISTE Short Term Training Programme (STTP) on Pedagogy for Effective use of ICT in Engineering
+          Education, Conducted by IIT Bombay, held under National Mission on Education through ICT(MHRD), 05-01-2015 to
+          31-01-2015 <br><br><br>
+          Third National Workshop on "Advanced Data Analysis & Structural Equation Modeling using IBM SPSS AMOS ",
+          organized by VIT Business School, VIT University, Vellore., 15-08-2014 to 17-08-2014 <br><br><br>
+          TEQIP II and CSI SIGDATA Sponsored "One Week Workshop on Databases - Learning Through Activity", organized by
+          the Department of CSE, Thiagarajar College of Engineering., 23-06-2014 to 27-06-2014 <br><br><br>
+          Two-Week ISTE Workshop on Computer Programming Under the National Mission on Education through ICT, MHRD,
+          Govt. of India., 09-06-2014 to 21-06-2014 <br><br><br>
+          Workshop on "Hadoop and Map-reduce for Big Data" at Centre for Development of Advanced Computing (C-DAC),
+          Knowledge Park, Bengaluru., 24-04-2014 to 26-04-2014 <br><br><br>
+          Research Promotion workshop on "Introduction to Graph and Geometric Algorithms", at Indian Institute of
+          Information Technology and Management, Kerala., 23-01-2014 to 25-01-2014 <br><br><br>
+          ACCS Workshop on Adaptive Computing : The Role of Big Data conducted by IISC Bangalore, at Hindustan
+          University, Chennai., 24-10-2013 to 24-10-2013 <br><br><br>
+          The context of Developing teams with program solving skills, ACM International Collegiate Multi-provincial
+          Programming Contest, Chennai., 19-10-2013 to 19-10-2013 <br><br><br>
+          Two-Week ISTE Workshop on Database Management System Under the National Mission on Education through ICT,
+          MHRD, Govt. of India., 21-05-2013 to 31-05-2013
+          Applications of Soft Computing Techniques in Information retrieval and Knowledge Discovery, Thiagarajar
+          College of Engineering, Madurai., 10-04-2013 to 10-04-2013 <br><br><br>
+          Faculty Development Workshop on Social Mobile Analytics Cloud (SMAC)Cognizant Technology Solutions,
+          ChennaiNational,, 27-02-2013 to 27-02-2013 <br><br><br>
+
+
+
+
+
+        </div>
+        <h1 class="line" style="font-family: 'Poppins', sans-serif;color: #9684f0;font-size: 35px;padding-bottom: 15px;
+        border-bottom-style: solid;
+        border-bottom-width: 3.1px;
+        width: 100%;">
+
+          Seminar/ Conference /FDP/ Workshops organized
+          <a href="#"><i class="fas fa-microphone" style="color: #9684f0;margin-left:10px"></i></a>
+        </h1>
+        <div
+          style="color: white;font-size: 20px;font-family: 'Mukta', sans-serif;height: fit-content; padding-top: 20px;">
+          ACM sponsored four Days online coding Boot camp: Python Programming, for School/Polytechnic and College
+          Teachers at the Department of Information Technology, Thiagarajar College of Engineering, Madurai during
+          01-09-2021 to 04-09-2021. <br><br>
+          ACM sponsored Webinar on “Big data Platform and Technologies”, by Dr.K.Vijay Kumar, Joint Director, CDAC,
+          Chennai, 15-04-2021. <br><br>
+          ACM sponsored Webinar on “Transfer Learning in NLP”, by Professor M.Anand Kumar, Department of IT, NIT
+          Suratkal, 26-02-2021. <br><br>
+          ACM Eminent Speaker Programme on “Game Theory”, by Professor R.Ramanujam, The Institute of Mathematical
+          Sciences, Chennai, 24-02-2021. <br><br>
+          One day Webinar on “Audio Science and Technology”, by Dr.TV.Venkateswaran, Scientist-F, Department of Science
+          and Technology, Govt. of India organized at Department of Information Technology, Thiagarajar College of
+          Engineering, Madurai, 20-02-2021. <br><br>
+          ACM Two Day Certification course on Python for Data Science, Department of Information Technology, Thiagarajar
+          College of Engineering, Madurai., 29-11-2019 to 30-11-2019. <br><br>
+          ACM Two Day Certification course on Python Basics, Department of Information Technology, Thiagarajar College
+          of Engineering, Madurai., 22-11-2019 to 23-11-2019. <br><br>
+          ACM Student Workshop on Advanced Data Structures Algorithms and their Applications, Sessions handled by Prof.
+          Venkatesh Raman, The Institute of Mathematical Sciences (IMSC), Chennai., 07-09-2019 to 08-09- 2019. <br><br>
+          AICTE QIP One week STC on "Research issues and Challenges in Data Science and Big Data Analytics", Organized
+          by the Department of Information Technology, Thiagarajar College of Engineering, Madurai., 18- 03-2019 to
+          24-03-2019. <br><br>
+          ACM Annual Event Meet and Lecture on "Why and What on Algorithms?" by Professor. Venkatesh Raman, ACM
+          Vice-President, Institute of Mathematical Sciences, Chennai., 26-10-2018 to 26-10-2018. <br><br>
+          ACM Sponsored Distinguished Speaker Programme on "Privacy and Security in Online Social Media (PSOSM)" by
+          Prof. PonnurangamKumaraguru, IIIT Delhi at KS Auditorium, Thiagarajar College of Engineering. 27-07-2018 to
+          27-07-2018. <br><br>
+          A Three Day TEQIP III Sponsored ACM Faculty Development Training Programme on Statistical, Analytical and Data
+          Modelling Tools, at Department of Information Technology, Thiagarajar College of Engineering, Madurai. ,
+          26-04-2018 to 28-04-2018. <br><br>
+          TCE in association with NIT Trichy“A one day inter-college Symposium" PRAGYAN SQUARE ONE at Thiagarajar
+          College of Engineering, Madurai., 09-09-2017 to 09-09-2017. <br><br>
+          ACM Technical talk on "Statistical Model Checking", by Prof. MadhavanMukund, Chennai Mathematical Institute,
+          (ACM President), at Department of IT, Thiagarajar College of Engineering, Madurai., 30-08-2017 to 30-08-2017.
+          <br><br>
+          A Three Day TEQIP II Sponsored ACM Hands on Training Programme on Research Based Statistical and Analytical
+          Tools, by AnupJeyantKelkar, CEO, and Prof. Vishnu Vardhan, Department of Statistics, Pondichery University, at
+          Department of IT, Thiagarajar College of Engineering., 05-01-2017 to 07-01-2017. <br><br>
+          A Two Day TEQIP II Sponsored ACM Distinguished Speaker Programme on "Image Processing and its Applications",
+          By Prof. oge Marques, Department of Computer and Electrical Engineering and Computer Science at Florida
+          Atlantic University (FAU) (Boca Raton, Florida), at Department of IT, Thiagarajar College of Engineering.,
+          09-12-2016 to 10-12-2016. <br><br>
+          ACM Technical talk on "Research issues in Automata Theory and its Applications", by Prof. MadhavanMukund,
+          Chennai Mathematical Institute, (ACM President), at Department of IT, Thiagarajar College of Engineering,
+          Madurai.,31-08-2016 to 31-08-2016, 31-08-2016 to 31-08-2016. <br><br>
+          National Conference on Recent Trends and Research Issues in Security, Mobility, Analytics and Cloud (SMAC),
+          (Technical Talk by Prof. Krishna Reddy IIIT Hyderabad, Prof.Rajagopal ISI Coimbatore), at Department of
+          Information Technology, Thiagarajar College of Engineering., 29-01-2016 to 30-01-2016. <br><br>
+          TEQIP Sponsored Two Days IEEE Faculty Development Programme on "Machine Learning and Internet of Things",
+          08-05-2015 to 09-05-2015. <br><br>
+          TEQIP Sponsored one day workshop on "Recent Trends and Research Challenges in Business Analytics and
+          Optimization" by Dr.Prof.SheikMeeran, University of Bath, UK, at Department of IT, Thiagarajar College of
+          Engineering., 13-08-2013 to 13-08-2013. <br><br>
+
+        </div>
+        <h1 class="line" style="font-family: 'Poppins', sans-serif;color: #baf4f7;font-size: 30px;padding-bottom: 15px;
+        border-bottom-style: solid;
+        border-bottom-width: 3.1px;
+        width: fit-content;">
+          Invited Lectures :
+
+        </h1>
+        <div
+          style="color: white;font-size: 20px;font-family: 'Mukta', sans-serif;height: fit-content;padding-top: 20px;">
+          Data Analytics Tools Techniques and Applications for Two Days Workshop on Data Analytics Tools for Real Time
+          Applications at KLN College of Information Technology. <br><br>
+          Application of AI and Machine Learning in Manufacturing of Medical Devices for the Two Days International FDP
+          on Machine learning in Manufacturing, Dept. of Mechanical Engineering, Thiagarajar College of
+          Engineering.<br><br>
+          E Governance An Opportunity To Shine for Three Days Workshop on E Governance And Its Issues and Challenges
+          Organized by National E Governance Division New Delhi and Kalasalingam University.<br><br>
+          Predictive Analytics for Workshop on Hands on Training on Big Data and Hadoop at Thiagarajar College of
+          Engineering.<br><br>
+          Statistics and Analytics Using R for A Three Day TEQIP II Sponsored ACM Hands on Training Programme on
+          Research Based Statistical and Analytical Tools at Thiagarajar College of Engineering.<br><br>
+          Data Analytics Tools Techniques and Applications for ACM Student Chapter Inaguration Cum Data Analytics
+          Workshop at Kalasalingam University.<br><br>
+          Hands on Training on Rapid Miner Tool Data Processing Algorithms and Its Applications for TEQIP III A Five Day
+          Faculty Development Programme on Machine Learning and R Tool at Thiagarajar College of Engineering.<br><br>
+          An Introduction To Data Analytics Tools Techniques And Applications for AICTE QIP Sponsored STC on Research
+          Issues And Challenges In Data Science and Big Data Analytics at Thiagarajar College of Engineering. <br><br>
+          Application of Machine Learning for Biomaterial Characterization for AICTE QIP on Biomaterials
+          Characterization and Implants Analytics at Thiagarajar College of Engineering. <br><br>
+          Python Basics for ACM Two Day Certification Course on Python Basics at Thiagarajar College of Engineering.
+          <br><br>
+          Particle Swarm Intelligence for Three Days FDP on Exploring Math and AI Techniques using Deep Learning
+          Techniques at Thiagarajar College of Engineering.
+
+        </div>
+
+      </div>
+      <div class="info" style="background-color: #282727;padding:10px;margin: 20px;padding: 10px;margin-bottom: 0%;"
+        id="Contact">
+
+        <h3 style="color:#ae9ffa ;padding: 10px;">Personal Details</h3>
+
+        <p style="color: rgba(255, 255, 255, 0.733);padding:10px">S/O. A.Abbas <br>
+          50/3, North Poonthotta Street, <br>
+          Vadakarai, Periyakulam,<br>
+          Theni (DT) – 625 601, Tamil Nadu, India.
+        </p>
+
+        <h3 style="color:#ae9ffa ;padding: 10px;">References</h3>
+        <p style="color: rgba(255, 255, 255, 0.733);padding:10px">S/O. A.Abbas <br>
+          Dr.S.Muthuramalingam
+          HOD COE
+          Professor
+          Department of Information Technology
+          Thiagarajar College of Engineering
+          Madurai – 15, Tamil Nadu.
+          Ph: +91 94437 72994
+          Email: smuthoo@gmail.com <br><br>
+
+          Dr.M.Ramakrishnan
+          Chairperson
+          Professor and Head
+          School of Information Technology
+          Madurai Kamaraj University
+          Madurai – 21
+          Mobile: +91 94441 10015
+          E.Mail Id: ramkrishod@gmail.com <br><br>
+
+          Dr.P.Karthikeyan
+          Associate Professor
+          Department of Information Technology
+          Thiagarajar College of Engineering
+          Madurai – 15, Tamil Nadu.
+          Ph: +91 96779 73740
+          Email: pkarthikeyantce@gmail.com <br><br>
+
+          Dr.R.Vishnu Vardhan
+          Professor
+          Department of Statistics
+          Pondicherry University
+          Pondicherry
+          Ph: +91 94876 09603
+          Email:rvvcrr@gmail.com
+
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  
+</body>
+
+</html>
